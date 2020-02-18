@@ -1,0 +1,30 @@
+{
+  "name": "createJob",
+  "base": "Application",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "job_id": {
+      "type": "string",
+      "required": true
+    },
+    "job_description": {
+      "type": "string",
+      "required": true
+    },
+    "job_status": {
+      "type": "string",
+      "required": true
+    },
+    "job_title": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
