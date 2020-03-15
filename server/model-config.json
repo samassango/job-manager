@@ -14,29 +14,49 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "mongodb"
   },
   "AccessToken": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "ACL": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "RoleMapping": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false,
     "options": {
       "strictObjectIDCoercion": true
     }
   },
   "Role": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
     "public": false
   },
   "createJob": {
-    "dataSource": "db",
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "tanent": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Jobs": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "status": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "skills": {
+    "dataSource": "mongodb",
+    "public": true
+  },
+  "Profile": {
+    "dataSource": "mongodb",
     "public": true
   }
 }

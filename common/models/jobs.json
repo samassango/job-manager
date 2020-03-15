@@ -1,0 +1,48 @@
+{
+  "name": "Jobs",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "skills": {
+      "type": [
+        "string"
+      ],
+      "required": true
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "budget": {
+      "type": "number",
+      "required": true
+    },
+    "verified": {
+      "type": "boolean",
+      "required": true
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "tanent_id": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
