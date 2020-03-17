@@ -1,9 +1,9 @@
 {
   "mongodb": {
-    "host": "localhost",
+    "host": "jobmanager-db-8ular.mongodb.net",
     "port": 27017,
-    "url": "",
-    "database": "mongodb",
+    "url": "mongodb+srv://admin:admin@jobmanager-db-8ular.mongodb.net/jobmanager_db?retryWrites=true&w=majority",
+    "database": "jobmanager_db",
     "password": "admin",
     "name": "mongodb",
     "user": "admin",
