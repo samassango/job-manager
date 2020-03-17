@@ -19,13 +19,14 @@
       "required": true
     },
     "image": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "skills": {
-      "type": [
-        "string"
-      ],
+      "type": ["string"],
+      "required": true
+    },
+    "userId": {
+      "type": "string",
       "required": true
     }
   },
