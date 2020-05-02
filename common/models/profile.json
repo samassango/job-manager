@@ -32,7 +32,7 @@
     "User": {
       "type": "hasMany",
       "model": "User",
-      "foreignKey": "userid",
+      "foreignKey": "userId",
       "options": {
         "nestRemoting": true
       }
