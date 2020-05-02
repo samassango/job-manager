@@ -25,14 +25,19 @@
     "skills": {
       "type": ["string"],
       "required": true
-    },
-    "userId": {
-      "type": "string",
-      "required": true
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "User": {
+      "type": "hasMany",
+      "model": "User",
+      "foreignKey": "userid",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }
