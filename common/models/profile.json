@@ -19,18 +19,16 @@
       "required": true
     },
     "image": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "skills": {
-      "type": ["string"],
-      "required": true
+      "type": ["string"]
     }
   },
   "validations": [],
   "relations": {
     "User": {
-      "type": "hasMany",
+      "type": "belongsTo",
       "model": "User",
       "foreignKey": "userId",
       "options": {
