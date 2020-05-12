@@ -15,9 +15,7 @@
       "required": true
     },
     "skills": {
-      "type": [
-        "string"
-      ],
+      "type": ["string"],
       "required": true
     },
     "status": {
@@ -37,8 +35,7 @@
       "required": true
     },
     "tanent_id": {
-      "type": "string",
-      "required": true
+      "type": "string"
     }
   },
   "validations": [],
