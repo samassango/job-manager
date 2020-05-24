@@ -53,6 +53,14 @@
         "nestRemoting": true
       }
     },
+    "Profile": {
+      "type": "belongsTo",
+      "model": "Profile",
+      "foreignKey": "acceptedBy",
+      "options": {
+        "nestRemoting": true
+      }
+    },
     "tanent": {
       "type": "belongsTo",
       "model": "tanent",
