@@ -26,10 +26,6 @@
       "type": "boolean",
       "required": true
     },
-
-    "tanent_id": {
-      "type": "string"
-    },
     "createdAt": {
       "type": "date",
       "defaultFn": "now"
@@ -60,7 +56,7 @@
     "tanent": {
       "type": "belongsTo",
       "model": "tanent",
-      "foreignKey": "tenent_id",
+      "foreignKey": "tanent_id",
       "options": {
         "nestRemoting": true
       }
