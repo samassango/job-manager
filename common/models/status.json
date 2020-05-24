@@ -13,6 +13,14 @@
     "description": {
       "type": "string",
       "required": true
+    },
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "lastUpdated": {
+      "type": "date",
+      "defaultFn": "now"
     }
   },
   "validations": [],

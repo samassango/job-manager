@@ -18,10 +18,6 @@
       "type": ["string"],
       "required": true
     },
-    "status": {
-      "type": "string",
-      "required": true
-    },
     "budget": {
       "type": "number",
       "required": true
@@ -30,16 +26,46 @@
       "type": "boolean",
       "required": true
     },
-    "author": {
-      "type": "string",
-      "required": true
-    },
+
     "tanent_id": {
       "type": "string"
+    },
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "lastUpdated": {
+      "type": "date",
+      "defaultFn": "now"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "status": {
+      "type": "belongsTo",
+      "model": "status",
+      "foreignKey": "status",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "User": {
+      "type": "belongsTo",
+      "model": "User",
+      "foreignKey": "author",
+      "options": {
+        "nestRemoting": true
+      }
+    },
+    "tanent": {
+      "type": "belongsTo",
+      "model": "tanent",
+      "foreignKey": "tenent_id",
+      "options": {
+        "nestRemoting": true
+      }
+    }
+  },
   "acls": [],
   "methods": {}
 }

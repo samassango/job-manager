@@ -23,6 +23,14 @@
     },
     "skills": {
       "type": ["string"]
+    },
+    "createdAt": {
+      "type": "date",
+      "defaultFn": "now"
+    },
+    "lastUpdated": {
+      "type": "date",
+      "defaultFn": "now"
     }
   },
   "validations": [],
